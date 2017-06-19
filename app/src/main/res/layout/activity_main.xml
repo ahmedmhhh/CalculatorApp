@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="10pt"
     tools:context="com.example.internet.calculatorapp.MainActivity">
 
 
@@ -13,6 +12,7 @@
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:background="@color/gray"
         android:ems="10"
         android:gravity="right"
@@ -36,27 +36,31 @@
                 android:id="@+id/buAc"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
+                android:layout_weight="1"
                 android:background="@color/whiteBack"
                 android:text="AC" />
 
             <Button
-                android:background="@color/whiteBack"
                 android:id="@+id/buSign"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
+                android:layout_weight="1"
+                android:background="@color/whiteBack"
                 android:text="+/-" />
 
             <Button
-                android:background="@color/whiteBack"
                 android:id="@+id/buPer"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
+                android:layout_weight="1"
+                android:background="@color/whiteBack"
                 android:text="%" />
 
             <Button
                 android:id="@+id/buDiv"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
+                android:layout_weight="1"
                 android:background="@color/orange"
                 android:text="/"
                 android:textColor="@android:color/white" />
@@ -67,33 +71,37 @@
             android:layout_height="match_parent">
 
             <Button
-                android:background="@color/whiteBack"
                 android:id="@+id/buSev"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
+                android:layout_weight="1"
+                android:background="@color/whiteBack"
                 android:text="7" />
 
             <Button
-                android:background="@color/whiteBack"
                 android:id="@+id/buEit"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
+                android:layout_weight="1"
+                android:background="@color/whiteBack"
                 android:text="8" />
 
             <Button
-                android:background="@color/whiteBack"
                 android:id="@+id/buNin"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
+                android:layout_weight="1"
+                android:background="@color/whiteBack"
                 android:text="9" />
 
             <Button
-                android:background="@color/orange"
-                android:textColor="@android:color/white"
                 android:id="@+id/buMul"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
-                android:text="X" />
+                android:layout_weight="1"
+                android:background="@color/orange"
+                android:text="X"
+                android:textColor="@android:color/white" />
         </TableRow>
 
         <TableRow
@@ -101,33 +109,37 @@
             android:layout_height="match_parent">
 
             <Button
-                android:background="@color/whiteBack"
                 android:id="@+id/buFor"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
+                android:layout_weight="1"
+                android:background="@color/whiteBack"
                 android:text="4" />
 
             <Button
-                android:background="@color/whiteBack"
                 android:id="@+id/buFiv"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
+                android:layout_weight="1"
+                android:background="@color/whiteBack"
                 android:text="5" />
 
             <Button
-                android:background="@color/whiteBack"
                 android:id="@+id/buSix"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
+                android:layout_weight="1"
+                android:background="@color/whiteBack"
                 android:text="6" />
 
             <Button
-                android:background="@color/orange"
-                android:textColor="@android:color/white"
                 android:id="@+id/buSub"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
-                android:text="-" />
+                android:layout_weight="1"
+                android:background="@color/orange"
+                android:text="-"
+                android:textColor="@android:color/white" />
         </TableRow>
 
         <TableRow
@@ -135,33 +147,37 @@
             android:layout_height="match_parent">
 
             <Button
-                android:background="@color/whiteBack"
                 android:id="@+id/buOne"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
+                android:layout_weight="1"
+                android:background="@color/whiteBack"
                 android:text="1" />
 
             <Button
-                android:background="@color/whiteBack"
                 android:id="@+id/buTwo"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
+                android:layout_weight="1"
+                android:background="@color/whiteBack"
                 android:text="2" />
 
             <Button
-                android:background="@color/whiteBack"
                 android:id="@+id/buThr"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
+                android:layout_weight="1"
+                android:background="@color/whiteBack"
                 android:text="3" />
 
             <Button
-                android:background="@color/orange"
-                android:textColor="@android:color/white"
                 android:id="@+id/buSum"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
-                android:text="+" />
+                android:layout_weight="1"
+                android:background="@color/orange"
+                android:text="+"
+                android:textColor="@android:color/white" />
         </TableRow>
     </TableLayout>
 
@@ -171,28 +187,28 @@
         android:orientation="horizontal">
 
         <Button
-            android:background="@color/whiteBack"
             android:id="@+id/buZero"
             android:layout_width="60pt"
             android:layout_height="30pt"
-            android:layout_weight="1"
+            android:layout_weight="2"
+            android:background="@color/whiteBack"
             android:text="0" />
 
         <Button
-            android:background="@color/whiteBack"
             android:id="@+id/buDot"
             android:layout_width="30pt"
             android:layout_height="30pt"
             android:layout_weight="1"
+            android:background="@color/whiteBack"
             android:text="." />
 
         <Button
-            android:background="@color/orange"
-            android:textColor="@android:color/white"
             android:id="@+id/buRe"
             android:layout_width="30pt"
             android:layout_height="30pt"
             android:layout_weight="1"
-            android:text="=" />
+            android:background="@color/orange"
+            android:text="="
+            android:textColor="@android:color/white" />
     </LinearLayout>
 </LinearLayout>
