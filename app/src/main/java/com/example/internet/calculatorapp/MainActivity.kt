@@ -14,6 +14,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun buNumberEvent(view: View){
+        if(isNumOp){
+            editText.setText("")
+        }
+        isNumOp=false
         val buSelected=view as Button
         var buClick:String=editText.text.toString()
         when(buSelected.id){
@@ -55,5 +59,50 @@ class MainActivity : AppCompatActivity() {
             }
         }
         editText.setText(buClick)
+    }
+
+    var op="*"
+    var oldNumer=""
+    var isNumOp=true
+    fun buOpEvent(view:View) {
+        val buSelected = view as Button
+        var buClick: String = editText.text.toString()
+        when (buSelected.id) {
+            buMul.id -> {
+                op="*"
+            }
+            buDiv.id -> {
+                op="/"
+            }
+            buSub.id -> {
+                op="-"
+            }
+            buSum.id -> {
+                op="+"
+            }
+        }
+        oldNumer=editText.text.toString()
+        isNumOp=true
+    }
+
+    fun buEqualEvent(view: View){
+        val newNumber=editText.text.toString()
+        var findNumber:Double?=null
+        when(op){
+            "*"->{
+                findNumber=oldNumer.toDouble()*newNumber.toDouble()
+            }
+            "/"->{
+                findNumber=oldNumer.toDouble()/newNumber.toDouble()
+            }
+            "-"->{
+                findNumber=oldNumer.toDouble()-newNumber.toDouble()
+            }
+            "+"->{
+                findNumber=oldNumer.toDouble()+newNumber.toDouble()
+            }
+        }
+        editText.setText(findNumber.toString())
+        isNumOp=true
     }
 }

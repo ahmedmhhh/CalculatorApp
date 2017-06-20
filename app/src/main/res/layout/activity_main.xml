@@ -68,7 +68,7 @@
                 android:layout_height="30pt"
                 android:layout_weight="1"
                 android:background="@color/orange"
-                android:onClick="buNumberEvent"
+                android:onClick="buOpEvent"
                 android:text="/"
                 android:textColor="@android:color/white"
                 android:textSize="18sp" />
@@ -109,14 +109,15 @@
                 android:textSize="18sp" />
 
             <Button
-                android:textSize="18sp"
                 android:id="@+id/buMul"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
                 android:layout_weight="1"
                 android:background="@color/orange"
+                android:onClick="buOpEvent"
                 android:text="X"
-                android:textColor="@android:color/white" />
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
         </TableRow>
 
         <TableRow
@@ -159,7 +160,7 @@
                 android:layout_height="30pt"
                 android:layout_weight="1"
                 android:background="@color/orange"
-                android:onClick="buNumberEvent"
+                android:onClick="buOpEvent"
                 android:text="-"
                 android:textColor="@android:color/white"
                 android:textSize="18sp" />
@@ -205,7 +206,7 @@
                 android:layout_height="30pt"
                 android:layout_weight="1"
                 android:background="@color/orange"
-                android:onClick="buNumberEvent"
+                android:onClick="buOpEvent"
                 android:text="+"
                 android:textColor="@android:color/white"
                 android:textSize="18sp" />
@@ -243,6 +244,7 @@
             android:layout_height="30pt"
             android:layout_weight="1"
             android:background="@color/orange"
+            android:onClick="buEqualEvent"
             android:text="="
             android:textColor="@android:color/white"
             android:textSize="18sp" />
