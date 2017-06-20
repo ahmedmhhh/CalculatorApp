@@ -29,6 +29,7 @@
 
 
         <TableRow
+            android:layout_marginBottom="1pt"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -36,13 +37,15 @@
                 android:id="@+id/buAc"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
+                android:layout_marginRight="1pt"
                 android:layout_weight="1"
                 android:background="@color/whiteBack"
-                android:onClick="buNumberEvent"
+                android:onClick="buClean"
                 android:text="AC"
                 android:textSize="18sp" />
 
             <Button
+                android:layout_marginRight="1pt"
                 android:id="@+id/buSign"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
@@ -56,9 +59,10 @@
                 android:id="@+id/buPer"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
+                android:layout_marginRight="1pt"
                 android:layout_weight="1"
                 android:background="@color/whiteBack"
-                android:onClick="buNumberEvent"
+                android:onClick="buPercent"
                 android:text="%"
                 android:textSize="18sp" />
 
@@ -75,10 +79,12 @@
         </TableRow>
 
         <TableRow
+            android:layout_marginBottom="1pt"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <Button
+                android:layout_marginRight="1pt"
                 android:id="@+id/buSev"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
@@ -89,6 +95,7 @@
                 android:textSize="18sp" />
 
             <Button
+                android:layout_marginRight="1pt"
                 android:id="@+id/buEit"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
@@ -99,6 +106,7 @@
                 android:textSize="18sp" />
 
             <Button
+                android:layout_marginRight="1pt"
                 android:id="@+id/buNin"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
@@ -109,6 +117,7 @@
                 android:textSize="18sp" />
 
             <Button
+
                 android:id="@+id/buMul"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
@@ -125,6 +134,8 @@
             android:layout_height="match_parent">
 
             <Button
+                android:layout_marginRight="1pt"
+                android:layout_marginBottom="1pt"
                 android:id="@+id/buFor"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
@@ -135,6 +146,7 @@
                 android:textSize="18sp" />
 
             <Button
+                android:layout_marginRight="1pt"
                 android:id="@+id/buFiv"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
@@ -145,6 +157,7 @@
                 android:textSize="18sp" />
 
             <Button
+                android:layout_marginRight="1pt"
                 android:id="@+id/buSix"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
@@ -167,10 +180,12 @@
         </TableRow>
 
         <TableRow
+            android:layout_marginBottom="1pt"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <Button
+                android:layout_marginRight="1pt"
                 android:id="@+id/buOne"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
@@ -181,6 +196,7 @@
                 android:textSize="18sp" />
 
             <Button
+                android:layout_marginRight="1pt"
                 android:id="@+id/buTwo"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
@@ -191,6 +207,7 @@
                 android:textSize="18sp" />
 
             <Button
+                android:layout_marginRight="1pt"
                 android:id="@+id/buThr"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
@@ -219,6 +236,7 @@
         android:orientation="horizontal">
 
         <Button
+            android:layout_marginRight="1pt"
             android:id="@+id/buZero"
             android:layout_width="60pt"
             android:layout_height="30pt"
@@ -229,6 +247,7 @@
             android:textSize="18sp" />
 
         <Button
+            android:layout_marginRight="1pt"
             android:id="@+id/buDot"
             android:layout_width="30pt"
             android:layout_height="30pt"

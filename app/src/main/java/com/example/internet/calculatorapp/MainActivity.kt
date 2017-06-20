@@ -105,4 +105,13 @@ class MainActivity : AppCompatActivity() {
         editText.setText(findNumber.toString())
         isNumOp=true
     }
+    fun buPercent(view: View){
+        val number=editText.text.toString().toDouble()/100
+        editText.setText(number.toString())
+        isNumOp=true
+    }
+    fun buClean(view: View){
+        editText.setText("0")
+        isNumOp=true
+    }
 }
